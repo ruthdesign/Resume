@@ -1,0 +1,153 @@
+*{
+    /* outline: 2px dashed green; */
+    margin: 0;
+    padding:0;
+}
+
+header{
+    text-align: center;
+}
+/* @media screen and (max-width: 600px) {
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "q"
+        "h"
+        "e"
+        "b"
+        "f";
+}
+ */
+/* step one - build your grid */
+/*
+.container {
+    padding:10%;
+    /* height: 100%; */
+    /*
+    display: grid;
+    grid-gap: 25px;
+    /* this will be  the same for everyone */
+    /*grid-template-columns: repeat(12, 1fr);
+    /* this will be customized, based on your grid, use pixels or % */
+    /*grid-template-rows: auto;
+    /* use letters from step 2 to build the grid */
+    /*grid-template-areas: 
+        "q q q q q h h h h h h h"
+        "b b b b e e e e a a a a"
+        "b b b b e e e e a a a a"
+        "f f f f f f f f f f f f";
+}
+*/
+li{
+    font-weight: 500;
+    padding:10px;
+}
+
+.date{
+    font-weight: 300;
+}
+.tab{
+    margin-left: 150px;
+}
+body{
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+
+h1{
+    font-size: 5em;
+    color: purple;
+}
+
+h2{
+    padding-top:25px;
+    font-size: 3em;
+    color: #000099
+}
+
+h3{
+    padding-top:45px;
+    color: purple;
+}
+
+
+
+
+/* step three - build a grid that becomes active when the pixels are 800px or less */
+/*
+@media screen and (max-width: 800px) {
+
+    .container{
+        display: grid;
+        grid-gap: 15px;
+        /* grid is only one column, keep this way */
+        /*grid-template-columns: 1fr;
+        /* you can enter values, or auto will adjust the box sizes based on content */
+        /*grid-template-rows: auto;
+        grid-template-areas:
+        "q"
+        "h"
+        "b"
+        "a"
+        "e"
+        "f"
+        "g"
+        "h";
+    }
+}
+*/
+/* step 1 - assign each of your sections a letter */
+
+/* {
+    grid-area: q;
+    font-weight:300;
+    padding-bottom:30px;
+}*/
+
+header {
+    background-color: black;
+    padding-top: 4px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*
+.Education {
+    
+}
+
+.Skills {
+    
+}
+
+.Content {
+  
+}
+
+.Experience{
+    
+}
+
+.About{
+   
+}
+*/
